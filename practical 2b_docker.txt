@@ -1,0 +1,9 @@
+docker -v
+node main.js
+docker build -t partb .
+docker images
+docker run --name JAYESH -it -d partb
+docker ps
+docker stop 9cf3864b418d
+docker rm 9cf3864b418d
+docker ps

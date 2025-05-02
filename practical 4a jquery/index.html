@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Mobile Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery and jQuery Mobile -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .custom-footer {
+      text-align: center;
+      font-size: 14px;
+    }
+    .team-member {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header">
+    <h1>Welcome</h1>
+  </div>
+
+  <div data-role="content">
+    <p>Welcome to My Mobile Site! We specialize in creating responsive mobile websites that work smoothly on any device.</p>
+    <p>Our mission is to make the web accessible and user-friendly for everyone, everywhere.</p>
+    <a href="#about" class="ui-btn ui-corner-all ui-shadow">About Us</a>
+    <a href="#contact" class="ui-btn ui-corner-all ui-shadow">Contact</a>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <p>&copy; 2025 My Mobile Site</p>
+  </div>
+</div>
+
+<!-- About Page -->
+<div data-role="page" id="about">
+  <div data-role="header">
+    <h1>About Us</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right">Home</a>
+  </div>
+
+  <div data-role="content">
+    <p>We are a passionate team of developers and designers committed to building simple and beautiful mobile web experiences.</p>
+
+    <h3>Our Team</h3>
+    <div class="team-member">
+      <strong>Alice Johnson</strong><br>
+      Lead Developer<br>
+      alice@example.com
+    </div>
+    <div class="team-member">
+      <strong>Mark Rivera</strong><br>
+      UX Designer<br>
+      mark@example.com
+    </div>
+    <div class="team-member">
+      <strong>Linda Wong</strong><br>
+      Project Manager<br>
+      linda@example.com
+    </div>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <p>&copy; 2025 My Mobile Site</p>
+  </div>
+</div>
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+  <div data-role="header">
+    <h1>Contact Us</h1>
+    <a href="#home" data-icon="home" data-iconpos="notext" class="ui-btn-right">Home</a>
+  </div>
+
+  <div data-role="content">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Your Full Name">
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="you@example.com">
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" placeholder="Write your message here..."></textarea>
+
+      <input type="submit" value="Send" class="ui-btn ui-corner-all ui-shadow">
+    </form>
+    <p>Or reach us directly at <a href="mailto:support@mobilesite.com">support@mobilesite.com</a></p>
+  </div>
+
+  <div data-role="footer" class="custom-footer">
+    <p>&copy; 2025 My Mobile Site</p>
+  </div>
+</div>
+
+</body>
+</html>
